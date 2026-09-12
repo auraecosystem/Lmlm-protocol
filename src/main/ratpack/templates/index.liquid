@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>ML Insights Dashboard</title></head>
+<body>
+    <h1>LIBSVM Dataset Analysis</h1>
+    <ul>
+    {% for row in results %}
+        <li>Label {{ row.label }}: {{ row.frequency }} occurrences</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
