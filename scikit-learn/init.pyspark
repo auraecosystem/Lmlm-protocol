@@ -1,0 +1,11 @@
+from sklearn.datasets import load_svmlight_file
+
+# Parse the sparse format into a CSR matrix (X) and target array (y)
+X, y = load_svmlight_file("data.libsvm")
+
+print(f"Feature matrix shape: {X.shape}")
+print(f"Labels shape: {y.shape}")
+
+# Inspect the first sample's non-zero features
+print("First row features:", X.getrow(0).toarray())
+print("First row label:", y[0])
