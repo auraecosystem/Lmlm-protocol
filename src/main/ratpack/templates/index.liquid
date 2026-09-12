@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head><title>ML Insights Dashboard</title></head>
+<head>
+    <title>ML Insights Dashboard</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; background: #0f172a; color: #f8fafc; }
+        .card { background: #1e293b; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+    </style>
+</head>
 <body>
-    <h1>LIBSVM Dataset Analysis</h1>
-    <ul>
-    {% for row in results %}
-        <li>Label {{ row.label }}: {{ row.frequency }} occurrences</li>
-    {% endfor %}
-    </ul>
+    <h1>LIBSVM Distributed ML Dashboard</h1>
+    
+    <div class="card">
+        <h2>Model Training Metrics</h2>
+        <p>Total Records Processed: <strong>{{ metrics.total_records }}</strong></p>
+        <p>Feature Dimensions: <strong>{{ metrics.features_count }}</strong></p>
+        <p>Final Objective Value: <strong>{{ metrics.objective_history }}</strong></p>
+    </div>
+
+    <div class="card">
+        <h2>Label Distribution</h2>
+        <ul>
+        {% for row in results %}
+            <li>Label {{ row.label }}: {{ row.frequency }} occurrences</li>
+        {% endfor %}
+        </ul>
+    </div>
 </body>
 </html>
