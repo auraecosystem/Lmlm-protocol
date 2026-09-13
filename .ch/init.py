@@ -25,8 +25,6 @@ from scipy.signal import find_peaks
 from scipy.signal import peak_widths
 from scipy.signal import savgol_filter
 
-
-
 def load_challenge_data(filename):
     x = loadmat(filename)
     data = np.asarray(x['val'], dtype=np.float64)
