@@ -1,0 +1,41 @@
+Here is how data is typically structured inside these files, using a standard syntax framework found in SIL App Builders and localized data formats.
+Because these files are formatted as structured plain text, you can open and edit them easily using any basic code editor like VS Code, Notepad++, or Sublime Text.
+## 1. Inside the .qst (Questions File)
+The question file uses identifiers to group questions, individual multiple-choice selections, and target answers together.
+
+[Question 1]
+Type = MultipleChoice
+Text = Which file extension is the master project file for SIL App Builder?
+A = .cls
+B = .qst
+C = .sil
+D = .ch
+Correct = C
+Hint = It matches the acronym of the organization that makes the software.
+
+[Question 2]
+Type = MultipleChoice
+Text = What platform is a .cls file used to style layout configurations for?
+A = Worksheet
+B = Database
+C = Audio Track
+D = Font Engine
+Correct = A
+
+## 2. Inside the script.ch (Chapter / Script File)
+Depending on your exact project version, the chapter text maps out the core reading content or localized structural text that the worksheet calls upon.
+
+\c 1
+\p This is the opening line of text defined inside your chapter file.
+\p Each marker indicates a new paragraph block rendered sequentially on screen.
+\p When a user finishes reading this chapter, the system references the layout rules in your worksheet.cls file to build the matching quiz questions.
+
+------------------------------
+To help you move this forward, what action are you taking next?
+
+* Do you need help generating a full template file with these custom structures to import into your editor?
+* Are you looking for the exact installation paths or programs needed to compile these into an app?
+* Or are you hitting an error code when your script tries to read these files?
+
+Let me know your target goal, and I'll map out the exact steps for you!
+
