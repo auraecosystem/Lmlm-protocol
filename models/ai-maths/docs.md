@@ -1,7 +1,6 @@
 complete APLCE/LMLM Mathematical Foundation Test Suite—
 
-not just a few unit tests, but a language-standard mathematical specification that could serve as the core math library for your Aura Ecosystem, Web4, KIBS, and LMLM runtime.
-
+not just a few unit tests, but a language-standard mathematical specification that could serve as the core math library for your Aura Ecosystem, Web4, KIBS, and LMLM runtime. 
 
 APLCE • LMLM Mathematical Foundation Standard (v2.0)
 
