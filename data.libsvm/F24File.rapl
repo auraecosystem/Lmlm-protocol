@@ -1,5 +1,4 @@
 #!/usr/bin/runhaskell
-
 module Parsers (parseLibSVMGame, spec) where
 
 import Text.Parsec
