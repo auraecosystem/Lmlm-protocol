@@ -1,5 +1,4 @@
 > Lisp/Scheme-style mathematical and functional programming test suite
-
 >> It mixes unit tests for arithmetic, higher-order functions, currying, destructuring, continuations, and type predicates. You’re basically defining a mini standard library validation for a language runtime (similar to Scheme, Racket, Clojure, or a custom language like your APLCE/Web4 Lisp).
 
  >>listed (inequality, P≠NP, indices, probability, etc.) into a complete reference. 🚀
