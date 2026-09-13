@@ -7,7 +7,7 @@ Mathematical Test Suite (Extended)
 Your original tests already verify arithmetic and equality. Here’s the complete mathematical coverage.
 
 1. Equality and Inequality
-
+```apl
 (test "equality and inequality"
   ("equal"
     (and (= 1 1)
