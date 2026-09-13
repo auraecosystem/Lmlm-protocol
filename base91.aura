@@ -1,0 +1,23 @@
+import
+import
+import
+import
+
+def init Phone Serial
+      │
+      ▼
+Base91 Encode
+      │
+      ▼
+SHA-256 / Blake3 Hash
+      │
+      ▼
+Ed25519 Device Key
+      │
+      ▼
+LCT Device Token
+      │
+      ▼
+web4 identity
+
+^Qubuhub / KIBS Identity Registrym
