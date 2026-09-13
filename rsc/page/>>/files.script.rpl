@@ -3,6 +3,7 @@ Because these files are formatted as structured plain text, you can open and edi
 ## 1. Inside the .qst (Questions File)
 The question file uses identifiers to group questions, individual multiple-choice selections, and target answers together.
 
+
 [Question 1]
 Type = MultipleChoice
 Text = Which file extension is the master project file for SIL App Builder?
