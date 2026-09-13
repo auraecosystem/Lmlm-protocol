@@ -25,9 +25,9 @@
   (module "Compiler Mathematics")
 
   (module "Machine Learning Mathematics"))
-This is a great foundation for a Lisp/Scheme runtime. I’d upgrade it into a comprehensive standard mathematics and functional programming test suite—something closer to what Racket, Clojure, OCaml, or a compiler project like APLCE would ship.
 
-The upgraded version adds:
+
+
 
 * Hundreds of mathematical tests (algebra, calculus, probability, statistics, matrices, complex numbers, graph theory, number theory, cryptography).
 * Property-based testing.
