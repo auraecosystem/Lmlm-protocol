@@ -1,4 +1,9 @@
-src: mt:.ref,score
+---
+src:
+mt:
+ref:
+score:
+---
 "Michael Jackson wore tape on his nose to get front pages, former bodyguard claims","Michael Jackson trug Klebeband auf der Nase, um Titelseiten zu <v>bekommen,</v> behauptet ehemaliger Bodyguard","Ehemaliger Bodyguard berichtet: Michael Jackson trug Klebeband auf seiner Nase, um auf die Titelseiten zu kommen",0.8068583409930249
 Michael Jackson's former bodyguard has claimed the late singer cultivated some of his eccentricities with the deliberate intention of riling up the media.,"Michael Jacksons ehemaliger Bodyguard behauptete, der verstorbene Sänger habe einige seiner Exzentrizitäten mit der <v>absichtlichen Absicht</v> gepflegt, die Medien aufzurütteln.","Der ehemalige Bodyguard von Michael Jackson behauptet, dass der verstorbene Sänger einige seiner exzentrischen Verhaltensweise extra aneignete, um die Medien anzustacheln.",0.6829605369041017
 "Matt Fiddes, now a property developer and owner of a martial arts/dance chain, told Metro that Jackson believed the fascination around his persona would stop if he ceased to be a ""mystery"" in the public eye.","Matt Fiddes, heute Immobilienentwickler und Besitzer einer Martial Arts/Dance-Kette, sagte Metro, Jackson glaube, dass die Faszination um seine Person aufhören würde, wenn er aufhöre, ein „Mysterium“ in der Öffentlichkeit zu sein.","Matt Fiddes, jetzt ein Bauträger und Inhaber einer Kampfsport/Tanzverein-Kette, erzählte Metro, dass Jackson daran glaubte, dass die Faszination mit seinem Image schwinden würde, wenn er im öffentlichen Leben nicht mehr ein „Mysterium“ sein würde.",0.7247622993624727
