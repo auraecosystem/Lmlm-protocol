@@ -1,0 +1,76 @@
+Based on these specific extensions—.cls, .qst, .ch, .zh, and .sil—you are dealing with source files for SIL International's language software, most likely [SIL Scripture App Builder](https://software.sil.org/scriptureappbuilder/) or [SIL Reading App Builder](https://software.sil.org/readingappbuilder/).
+These tools are widely used by linguists and educators to build localized literacy apps and digital worksheets.
+Here is exactly what each extension stands for in this configuration ecosystem:
+## File Extension Breakdown
+
+* 
+* worksheet.cls (Class / Configuration): Defines the overall layout, theme, styles, and master structure of the worksheet component.
+* .qst (Questions): The data file that holds the actual quiz or test questions and multiple-choice options used in the app.
+* .ch or .zh (Chapter / Language Codes):
+* In book-based data structures, .ch often represents a Chapter file.
+   * In internationalization files, these can represent specific languages (e.g., .zh for Chinese localization data).
+* .sil (SIL Project File): The master project configuration file that ties all these assets together. It tells the builder software how to compile the text, audio, and questions into a final Android or iOS application.
+* 
+
+------------------------------
+Since you are looking at files meant to generate digital worksheets and interactive quizzes, let's practice with one! Try this interactive sample quiz to see how these types of structured questions behave:
+Which file extension is commonly used for Python source code files?
+[] 
+   
+   1. .java
+   Incorrect. The .java extension is used for Java source code files, not Python.
+   2. .cpp
+   Incorrect. The .cpp extension is typically used for C++ source files.
+   3. .py
+   Correct! The .py extension is the standard extension for Python programming language files.
+   4. .html
+   Incorrect. The .html extension is used for markup files in web development, not Python programming.
+   
+Hint:
+Think of the first two letters of the programming language's name that shares its name with a large snake.
+What is the standard file extension for a JavaScript source file?
+[] 
+   
+   1. .jvs
+   Incorrect. .jvs is not a standard extension used for JavaScript code.
+   2. .js
+   Correct! The .js extension is universally used for JavaScript files.
+   3. .java
+   Incorrect. .java belongs to Java, a completely different programming language.
+   4. .script
+   Incorrect. .script is not a standard file extension for JavaScript.
+   
+Hint:
+It is a simple two-letter abbreviation derived from the first letters of the language's name.
+Which file extension represents a C++ source code file?
+[] 
+   
+   1. .c
+   Incorrect. The .c extension is used for the C programming language, whereas C++ uses a more detailed extension.
+   2. .cs
+   Incorrect. The .cs extension is used for C# (C-sharp) source code files.
+   3. .cp
+   Incorrect. .cp is a legacy or uncommon abbreviation and not the standard for C++.
+   4. .cpp
+   Correct! The .cpp extension is the standard identifier for C++ source code files.
+   
+Hint:
+This extension builds upon the base letter "c" and represents the two "plus" symbols in the language's name.
+Which file extension is most commonly used for lightweight data interchange and configuration files in modern software development?
+[] 
+   
+   1. .json
+   Correct! The .json extension is used for JavaScript Object Notation files, widely used for data transfer and configurations.
+   2. .xml
+   Incorrect. While .xml is a markup language for data representation, .json is much more lightweight and preferred in modern web APIs.
+   3. .txt
+   Incorrect. A .txt file contains plain text without structured object formatting.
+   4. .dat
+   Incorrect. .dat is a generic data file extension, not specifically structured for standard configuration or data interchange like JSON.
+   
+Hint:
+It stands for JavaScript Object Notation and begins with the letter 'j'.
+File Extensions in Programming and Deployment
+[] 
+Are you currently trying to modify an existing app project, or are you looking for a way to open and edit these specific file types? Let me know your goal so I can point you to the right tools!
+
