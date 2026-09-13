@@ -1,0 +1,616 @@
+> Lisp/Scheme-style mathematical and functional programming test suite
+
+>> It mixes unit tests for arithmetic, higher-order functions, currying, destructuring, continuations, and type predicates. You’re basically defining a mini standard library validation for a language runtime (similar to Scheme, Racket, Clojure, or a custom language like your APLCE/Web4 Lisp).
+
+ >>listed (inequality, P≠NP, indices, probability, etc.) into a complete reference. 🚀
+
+## LMLM/APLCE Mathematical Standard Test Suite
+
+1. Equality (=)
+
+Your code:
+
+(and (= 1 1.0)
+     (= 1 1)
+     (= 1.0 1)
+     (= 1.0 1.0))
+
+Mathematical Equality
+
+a=b
+
+Meaning both values represent the same mathematical object.
+
+Examples:
+
+Expression	Result
+5=5	True ✅
+1=1.0	True (numeric equivalence)
+2+3=5	True
+\pi=3.14159…	True (definition)
+
+2. Inequality (≠, <>, ≤, ≥)
+
+Your requested topic.
+
+Not Equal
+
+a\neq b
+
+Example:
+
+1\neq2
+
+Less Than
+
+a<b
+
+Greater Than
+
+a>b
+
+Less or Equal
+
+a\le b
+
+Greater or Equal
+
+a\ge b
+
+Examples:
+
+Formula	Meaning
+5>2	Greater than
+3<7	Less than
+2\le2	Equal allowed
+8\ge5	Greater or equal
+
+3. Integer Division vs Floating Division
+
+Your code:
+
+(/ 3 2)
+
+Returns integer.
+
+Integer Division
+
+3\div2=1
+
+Remainder ignored.
+
+Floating Division
+
+\frac32=1.5
+
+Examples:
+
+Expression	Output
+7/2	3.5
+7\operatorname{div}2	3
+7\bmod2	1
+
+4. Indices (Exponents)
+
+One of the biggest topics in algebra.
+
+Laws of Indices
+
+a^m\times a^n=a^{m+n}\frac{a^m}{a^n}=a^{m-n}(a^m)^n=a^{mn}(ab)^n=a^nb^na^{-n}=\frac1{a^n}a^0=1
+
+Examples:
+
+Formula	Result
+2^3	8
+5^{-2}	1/25
+9^{1/2}	3
+27^{1/3}	3
+
+5. Roots
+
+\sqrt{x}=x^{1/2}\sqrt3{x}=x^{1/3}
+
+Properties:
+
+\sqrt{ab}=\sqrt a\sqrt b
+
+6. Logarithms
+
+Inverse of exponentiation.
+
+\log_ba=c\iff b^c=a
+
+Laws:
+
+\log(ab)=\log a+\log b\log\left(\frac ab\right)=\log a-\log b\log(a^n)=n\log a
+
+Special logs:
+
+\ln x=\log_ex
+
+7. Probability
+
+One of your requested topics.
+
+Probability Formula
+
+P(A)=\frac{\text{Favourable Outcomes}}{\text{Total Outcomes}}
+
+Examples:
+
+Rolling a die.
+
+P(3)=\frac16
+
+Coin toss.
+
+P(H)=\frac12
+
+Conditional Probability
+
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}
+
+Addition Rule
+
+P(A\cup B)=P(A)+P(B)-P(A\cap B)
+
+Multiplication Rule
+
+P(A\cap B)=P(A)P(B)
+
+If independent.
+
+Bayes Theorem
+
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}
+
+8. Combinations and Permutations
+
+Permutation
+
+{}^nP_r=\frac{n!}{(n-r)!}
+
+Combination
+
+{}^nC_r=\frac{n!}{r!(n-r)!}
+
+Example:
+
+Choose 3 people from 10.
+
+{}^{10}C_3=120
+
+9. Factorials
+
+n!=n(n-1)(n-2)…1
+
+Examples:
+
+5!=1200!=1
+
+10. Sets
+
+A\cup B
+
+Union.
+
+A\cap B
+
+Intersection.
+
+A-B
+
+Difference.
+
+A^c
+
+Complement.
+
+11. Boolean Algebra
+
+Your tests use and, not.
+
+Operation	Symbol
+AND	A\land B
+OR	A\lor B
+NOT	\neg A
+XOR	A\oplus B
+
+Truth table:
+
+A	B	AND	OR
+T	T	T	T
+T	F	F	T
+F	T	F	T
+F	F	F	F
+
+12. Algebra
+
+Linear Equation
+
+ax+b=0
+
+Solution.
+
+x=-\frac ba
+
+Quadratic Equation
+
+ax^2+bx+c=0
+
+Formula.
+
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+
+Cubic
+
+ax^3+bx^2+cx+d=0
+
+13. Simultaneous Equations
+
+\begin{cases}x+y=5\\2x-y=4\end{cases}
+
+Solve using substitution or elimination.
+
+14. Functions
+
+Your code uses map, filter, comp.
+
+Function Definition
+
+f(x)=x^2+1
+
+Composition
+
+(f\circ g)(x)=f(g(x))
+
+Exactly what your comp function tests.
+
+Identity
+
+I(x)=x
+
+Inverse
+
+f^{-1}(x)
+
+15. Sequences and Series
+
+Arithmetic.
+
+a_n=a+(n-1)d
+
+Sum.
+
+S_n=\frac n2(2a+(n-1)d)
+
+Geometric.
+
+a_n=ar^{n-1}
+
+Sum.
+
+S_n=a\frac{1-r^n}{1-r}
+
+16. Matrices
+
+A=\begin{bmatrix}1&2\\3&4\end{bmatrix}
+
+Operations:
+
+A+BABA^{-1}
+
+Determinant.
+
+\det(A)=ad-bc
+
+17. Vectors
+
+\vec v=(x,y,z)
+
+Magnitude.
+
+|\vec v|=\sqrt{x^2+y^2+z^2}
+
+Dot product.
+
+\vec a\cdot\vec b
+
+Cross product.
+
+\vec a\times\vec b
+
+18. Calculus
+
+Limits
+
+\lim_{x\to a}f(x)
+
+Derivatives
+
+\frac{dy}{dx}
+
+Power rule.
+
+\frac d{dx}(x^n)=nx^{n-1}
+
+Integrals
+
+\int f(x)dx
+
+Fundamental theorem.
+
+\int_a^bf(x)dx=F(b)-F(a)
+
+19. Differential Equations
+
+\frac{dy}{dx}=ky
+
+Solution.
+
+y=Ce^{kx}
+
+20. Complex Numbers
+
+z=a+bi
+
+Magnitude.
+
+|z|=\sqrt{a^2+b^2}
+
+Euler Formula.
+
+e^{i\theta}=\cos\theta+i\sin\theta
+
+21. Trigonometry
+
+Function	Formula
+Sine	\sin\theta
+Cosine	\cos\theta
+Tangent	\tan\theta=\frac{\sin\theta}{\cos\theta}
+
+Identity.
+
+\sin^2\theta+\cos^2\theta=1
+
+Law of Sines.
+
+\frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}
+
+Law of Cosines.
+
+c^2=a^2+b^2-2ab\cos C
+
+22. Statistics
+
+Mean.
+
+\mu=\frac{\sum x}n
+
+Variance.
+
+\sigma^2=\frac{\sum(x-\mu)^2}n
+
+Standard deviation.
+
+\sigma=\sqrt{\sigma^2}
+
+Median.
+
+Mode.
+
+Range.
+
+23. Distributions
+
+Binomial.
+
+P(X=k)=\binom nkp^k(1-p)^{n-k}
+
+Poisson.
+
+P(X=k)=\frac{\lambda^ke^{-\lambda}}{k!}
+
+Normal Distribution.
+
+X\sim N(\mu,\sigma^2)
+
+24. Number Theory
+
+Prime.
+
+2,3,5,7,11…
+
+GCD.
+
+\gcd(a,b)
+
+LCM.
+
+\operatorname{lcm}(a,b)
+
+Modulus.
+
+a\bmod n
+
+Fermat.
+
+a^{p-1}\equiv1\pmod p
+
+25. Graph Theory
+
+Graph.
+
+G=(V,E)
+
+Tree.
+
+Cycle.
+
+Shortest path.
+
+Euler path.
+
+Hamiltonian cycle.
+
+26. Linear Programming
+
+Objective.
+
+\max Z=ax+by
+
+Subject to constraints.
+
+2x+y\le10
+
+27. Optimization
+
+Gradient.
+
+\nabla f(x)
+
+Gradient descent.
+
+x_{t+1}=x_t-\alpha\nabla f(x_t)
+
+Used heavily in AI and machine learning.
+
+28. Information Theory
+
+Entropy.
+
+H(X)=-\sum p(x)\log_2p(x)
+
+Mutual information.
+
+I(X;Y)
+
+29. Machine Learning Mathematics
+
+Loss.
+
+L(y,\hat y)
+
+MSE.
+
+\frac1n\sum(y-\hat y)^2
+
+Cross entropy.
+
+-\sum y\log\hat y
+
+Softmax.
+
+\sigma(z_i)=\frac{e^{z_i}}{\sum e^{z_j}}
+
+30. P ≠ NP (Computational Complexity)
+
+One of your requested topics.
+
+This is one of the most famous unsolved problems in computer science.
+
+Complexity Classes
+
+Class	Meaning
+P	Problems solvable in polynomial time.
+NP	Solutions verifiable in polynomial time.
+NP-Complete	Hardest problems inside NP.
+NP-Hard	At least as hard as NP-complete.
+
+Examples:
+
+Problem	Class
+Sorting	P
+Shortest Path	P
+Traveling Salesman (decision)	NP-Complete
+Sudoku	NP-Complete
+Boolean SAT	NP-Complete
+
+The Big Question
+
+P\stackrel?=NP
+
+If P = NP:
+
+* Every efficiently verifiable problem becomes efficiently solvable.
+
+If P ≠ NP:
+
+* Some problems remain fundamentally difficult.
+
+This is one of the Clay Millennium Prize Problems (US$1 million prize).
+
+31. Lambda Calculus (matches your currying tests)
+
+Your code:
+
+(fn (a b c) ...)
+
+is lambda calculus.
+
+\lambda x.x
+
+Currying.
+
+f(a,b,c)=((f\ a)\ b)\ c
+
+Exactly what your test validates.
+
+32. Functional Programming Mathematics
+
+Your library tests correspond to mathematical operators.
+
+Function	Mathematical meaning
+map	Apply function over a set.
+filter	Select subset satisfying predicate.
+fold	Reduce sequence into one value.
+comp	Function composition .
+call/cc	Continuation (control-flow mathematics).
+
+Example:
+
+(map square '(1 2 3))
+
+Mathematically:
+
+\{1,2,3\}\rightarrow\{1,4,9\}
+
+33. Continuations (Advanced Computation Theory)
+
+Your test:
+
+(call/cc ...)
+
+Continuation captures the “rest of computation.”
+
+Diagram:
+
+Used in Scheme, compiler construction, interpreters, coroutines, generators, async runtimes.
+
+Mathematical Coverage Score for APLCE 📚
+
+Area	Included
+Arithmetic	✅
+Algebra	✅
+Indices & Roots	✅
+Logarithms	✅
+Probability	✅
+Statistics	✅
+Calculus	✅
+Matrices & Vectors	✅
+Discrete Mathematics	✅
+Boolean Algebra	✅
+Set Theory	✅
+Graph Theory	✅
+Number Theory	✅
+Optimization	✅
+Information Theory	✅
+Computational Complexity (P vs NP)	✅
+Lambda Calculus / Currying	✅
+Continuations / Computation Theory	✅
+
+For your APLCE (Aura Programming Languages & Compiler Engineering) curriculum, this fits naturally as a module called Mathematical Foundations of Programming Languages, covering logic, discrete mathematics, lambda calculus, type theory, probability, linear algebra for AI, graph theory for compilers, information theory, optimization, and computational complexity (including P vs NP).
+
+5
+
+5
