@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScriptureAppBuilderProject version="1.0">
+    <ProjectInfo>
+        <Id>org.sil.app.worksheet.demo</Id>
+        <Name>Worksheet Project Template</Name>
+        <Language>en</Language>
+    </ProjectInfo>
+    <Resources>
+        <StyleSheet src="worksheet.cls" />
+        <Questions src="questions.qst" />
+        <ContentBook id="CH1" src="script.ch" />
+    </Resources>
+</ScriptureAppBuilderProject>

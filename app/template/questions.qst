@@ -1,0 +1,23 @@
+# SIL App Builder - Interactive Quiz Questions Data File
+
+[Question 1]
+id = q_001
+type = MultipleChoice
+text = What does a .sil file represent in this development project?
+A = The styling worksheet configuration
+B = The master project configuration file
+C = The quiz question data array
+D = The compiled application bundle
+answer = B
+hint = It shares its name with the organization that created the software framework.
+
+[Question 2]
+id = q_002
+type = MultipleChoice
+text = Which file extension handles the look, feel, and margins of the worksheet view?
+A = .qst
+B = .ch
+C = .sil
+D = .cls
+answer = D
+hint = Think of a master "class" file that guides styling templates.
