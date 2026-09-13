@@ -1,4 +1,4 @@
-(init "math functions"
+(test "math functions"
   ("equality"
    (and (= 1 1.0)
         (= 1 1)
