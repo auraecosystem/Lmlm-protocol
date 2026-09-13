@@ -3,7 +3,7 @@
 ;; Aura Programming Languages & Compiler Engineering
 ;; Mathematical Runtime Validation Suite 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
- 
+
 (suite "APLCE Mathematical Standard v2.0")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
