@@ -1,0 +1,494 @@
+>>This is essentially a Scheme/Lisp-style test suite (very close to Racket/Clojure/Fennel/Lisp dialects). It tests core mathematics, functional programming, currying, destructuring, and continuations. Since you also listed Inequality, Sublimation, P≠NP, Indices, Probability, All mathematical formulas/equations/models, here’s a comprehensive mathematical companion.
+
+>>Mathematical Foundation Pack (APLCE / Aura Mathematics)
+
+1. Equality (=)
+
+Equality means two expressions have exactly the same value.
+
+Examples:
+
+1=12+3=5\sqrt{25}=5\pi=3.1415926535\ldots
+
+Your tests:
+
+(= 1 1.0)     ; integer equals float
+(= 1.0 1)
+(not (= 1 2))
+
+>>Meaning numeric equality works across integer and floating-point values.
+
+2. Inequality (≠, < , >, ≤, ≥)
+
+a\neq b
+
+Examples:
+
+Symbol	Meaning
+\neq	Not equal
+<	Less than
+>	Greater than
+\le	Less than or equal
+\ge	Greater than or equal
+
+Examples:
+
+5>3-2<07\ge74\le9
+
+3. Indices / Exponents
+
+>>Indices represent repeated multiplication.
+
+a^n=a\times a\times a\cdots
+
+>>Laws of indices:
+
+Law	Formula
+Product	a^ma^n=a^{m+n}
+Quotient	\frac{a^m}{a^n}=a^{m-n}
+Power of Power	(a^m)^n=a^{mn}
+Negative Index	a^{-n}=\frac1{a^n}
+Zero Index	a^0=1
+Fractional Index	a^{1/n}=\sqrt[n]{a}
+
+Examples:
+
+2^5=3210^{-2}=0.0116^{1/2}=427^{1/3}=3
+
+>>4. Integer Division vs Floating Division
+
+Your test:
+
+(/ 3 2)     ; => 1
+(/ 3 2.0)   ; => 1.5
+
+>>Meaning:
+
+Operation	Result
+Integer division	3\div2=1
+Floating division	3\div2=1.5
+Floor division	\lfloor3/2\rfloor=1
+Modulo	3\bmod2=1
+
+>>5. Algebra
+
+>>Linear equation:
+
+ax+b=c
+
+Quadratic equation:
+
+ax^2+bx+c=0
+
+>>Quadratic Formula:
+
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+
+Binomial identities:
+
+(a+b)^2=a^2+2ab+b^2(a-b)^2=a^2-2ab+b^2a^2-b^2=(a-b)(a+b)
+
+>>6. Geometry Formulas
+
+Shape	Formula
+Circle Area	A=\pi r^2
+Circumference	C=2\pi r
+Rectangle	A=lw
+Triangle	A=\frac12 bh
+Sphere	V=\frac43\pi r^3
+Cylinder	V=\pi r^2h
+
+>>Pythagoras:
+
+a^2+b^2=c^2
+
+Distance:
+
+d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}
+
+>>7. Trigonometry
+
+\sin\theta=\frac{opposite}{hypotenuse}\cos\theta=\frac{adjacent}{hypotenuse}\tan\theta=\frac{opposite}{adjacent}
+
+Identity:
+
+\sin^2\theta+\cos^2\theta=1
+
+Euler identity:
+
+e^{i\pi}+1=0
+
+8. Calculus
+
+>>Derivative:
+
+\frac{d}{dx}(x^n)=nx^{n-1}
+
+Chain Rule:
+
+\frac{d}{dx}f(g(x))=f’(g(x))g’(x)
+
+Integral:
+
+\int x^n dx=\frac{x^{n+1}}{n+1}+C
+
+>>Fundamental theorem:
+
+\int_a^bf’(x)dx=f(b)-f(a)
+
+Limits:
+
+\lim_{x\to0}\frac{\sin x}{x}=1
+
+>>9. Probability
+
+Probability of an event:
+
+P(A)=\frac{\text{Favorable Outcomes}}{\text{Total Outcomes}}
+
+Complement:
+
+P(A^c)=1-P(A)
+
+Addition Rule:
+
+P(A\cup B)=P(A)+P(B)-P(A\cap B)
+
+Multiplication Rule:
+
+P(A\cap B)=P(A)P(B|A)
+
+Conditional Probability:
+
+P(A|B)=\frac{P(A\cap B)}{P(B)}
+
+Bayes’ Theorem:
+
+P(A|B)=\frac{P(B|A)P(A)}{P(B)}
+
+Expected Value:
+
+E(X)=\sum x_iP(x_i)
+
+Variance:
+
+Var(X)=E(X-\\mu)^2
+
+Standard Deviation:
+
+\sigma=\sqrt{Var(X)}
+
+10. Statistics
+
+Mean:
+
+\mu=\frac{\sum x}{n}
+
+Median:
+
+Middle value.
+
+Mode:
+
+Most frequent value.
+
+Variance:
+
+\sigma^2=\frac{\sum(x-\mu)^2}{n}
+
+Z-score:
+
+z=\frac{x-\mu}{\sigma}
+
+Correlation:
+
+r=\frac{\sum(x-\bar x)(y-\bar y)}{\sigma_x\sigma_y}
+
+11. Discrete Mathematics
+
+Sets:
+
+A\cup BA\cap BA-BA^c
+
+Logic:
+
+Operator	Meaning
+\land	AND
+\lor	OR
+\neg	NOT
+\Rightarrow	Implies
+\Leftrightarrow	Equivalent
+
+De Morgan:
+
+\neg(A\land B)=\neg A\lor\neg B\neg(A\lor B)=\neg A\land\neg B
+
+12. Number Theory
+
+Prime:
+
+2,3,5,7,11,13,17,19
+
+GCD:
+
+\gcd(a,b)
+
+LCM:
+
+lcm(a,b)=\frac{ab}{gcd(a,b)}
+
+Modulo arithmetic:
+
+17\equiv5\pmod{12}
+
+Fermat’s Little Theorem:
+
+a^{p-1}\equiv1\pmod p
+
+13. Linear Algebra
+
+Matrix:
+
+A=\begin{bmatrix}a&b\\c&d\end{bmatrix}
+
+Determinant:
+
+det(A)=ad-bc
+
+Inverse:
+
+A^{-1}=\frac1{det(A)}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}
+
+Dot Product:
+
+\vec a\cdot\vec b=|a||b|\cos\theta
+
+Cross Product:
+
+\vec a\times\vec b
+
+Eigen Equation:
+
+Av=\lambda v
+
+14. Differential Equations
+
+First-order:
+
+\frac{dy}{dx}=ky
+
+Solution:
+
+y=Ce^{kx}
+
+Logistic Growth:
+
+\frac{dP}{dt}=rP\left(1-\frac PK\right)
+
+Wave Equation:
+
+\frac{\partial^2u}{\partial t^2}=c^2\frac{\partial^2u}{\partial x^2}
+
+15. Optimization Models
+
+Gradient:
+
+\nabla f(x)
+
+Gradient Descent:
+
+x_{new}=x-\alpha\nabla f(x)
+
+Lagrange Multiplier:
+
+\nabla f=\lambda\nabla g
+
+16. Machine Learning Mathematics
+
+Linear Regression:
+
+y=wx+b
+
+Loss:
+
+MSE=\frac1n\sum(y-\hat y)^2
+
+Logistic Regression:
+
+\sigma(x)=\frac1{1+e^{-x}}
+
+Softmax:
+
+P_i=\frac{e^{z_i}}{\sum e^{z_j}}
+
+Cross Entropy:
+
+L=-\sum y\log\hat y
+
+17. Graph Theory
+
+Vertices and edges.
+
+Degree:
+
+deg(v)
+
+Euler Path.
+
+Hamiltonian Cycle.
+
+Shortest Path:
+
+d(u,v)
+
+Adjacency Matrix.
+
+18. Complexity Theory — P ≠ NP
+
+One of computer science’s biggest open problems.
+
+Class	Meaning
+P	Problems solvable in polynomial time.
+NP	Solutions verifiable in polynomial time.
+NP-Complete	Hardest problems inside NP.
+NP-Hard	At least as hard as NP problems.
+
+Examples:
+
+Problem	Class
+Sorting	P
+Shortest Path	P
+Travelling Salesman (decision)	NP-Complete
+Boolean SAT	NP-Complete
+Knapsack (decision)	NP-Complete
+
+The Millennium Prize question asks whether every efficiently verifiable problem is also efficiently solvable:
+
+P\stackrel{?}{=}NP
+
+The prevailing belief is P ≠ NP, but no proof is known.
+
+19. Functional Mathematics in Your Code
+
+Your test suite also validates concepts from lambda calculus.
+
+Code	Math Concept
+map	Function application over a set.
+fold	Reduction / summation operator.
+filter	Subset selection.
+comp	Function composition:
+currying	f(a,b,c)=(((f\ a)\ b)\ c)
+call/cc	Continuation from lambda calculus.
+
+20. Continuations and Lambda Calculus
+
+Lambda abstraction:
+
+\lambda x.x+1
+
+Application:
+
+(\lambda x.x+1)(5)=6
+
+Currying:
+
+\lambda x.\lambda y.x+y
+
+Continuation Passing Style (CPS):
+
+f(x,k)=k(f(x))
+
+Your code:
+
+(call/cc (fn (cc)
+   (cc 7)))
+
+Mathematically:
+
+Immediate escape returning 7 through the continuation.
+
+21. Mathematical Models Used Across Science & AI
+
+Model	Equation
+Exponential Growth	P=P_0e^{rt}
+Logistic Growth	P=\frac K{1+Ae^{-rt}}
+SIR Disease Model	S’=-\beta SI,\ I’=\beta SI-\gamma I
+Markov Chain	P(X_{n+1}=j|X_n=i)=P_{ij}
+Lotka–Volterra	\dot x=ax-bxy,\ \dot y=-cy+dxy
+Black–Scholes	\frac{\partial V}{\partial t}+\frac12\sigma^2S^2\frac{\partial^2V}{\partial S^2}+rS\frac{\partial V}{\partial S}-rV=0
+
+22. APLCE Mathematics Coverage
+
+For your APLCE (Aura Programming Languages & Compiler Engineering) curriculum, this test file belongs naturally in Mathematics for Programming Languages.
+
+APLCE Module	Mathematics Covered
+APLCE-MATH-101	Arithmetic, Equality, Inequality, Indices, Logarithms.
+APLCE-MATH-102	Algebra, Functions, Relations, Sets, Logic.
+APLCE-MATH-201	Probability, Statistics, Combinatorics.
+APLCE-MATH-202	Discrete Mathematics, Graph Theory.
+APLCE-MATH-301	Linear Algebra, Matrices, Eigenvalues.
+APLCE-MATH-302	Calculus, Differential Equations, Optimization.
+APLCE-CS-401	Lambda Calculus, Currying, Continuations.
+APLCE-CS-402	Computational Complexity (P, NP, NP-Complete, NP-Hard).
+
+This turns your Lisp/Scheme test suite into a bridge between compiler engineering, functional programming, and the core mathematics used in AI, cryptography, blockchain, algorithms, and Web4 development.
+
+5
+
+5
+
+6
+
+5
+
+6
+
+5
+
+5
+
+5
+
+5
+
+6
+
+7
+
+6
+
+5
+
+4
+
+4
+
+5
+
+5
+
+6
+
+5
+
+6
+
+5
+
+5
+
+5
+
+5
+
+6
+
+7
+
+6
+
+5
+
+4
+
+4
