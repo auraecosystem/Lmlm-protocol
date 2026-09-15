@@ -1,6 +1,5 @@
 class JR_sde(par={})[source]
 Jansen-Rit model C++ implementation.
-
 Parameters:
 par: dict
 Including the following: - A : [mV] determine the maximum amplitude of the excitatory PSP (EPSP) - B : [mV] determine the maximum amplitude of the inhibitory PSP (IPSP) - a : [Hz] 1/tau_e,  of the reciprocal of the time constant of passive membrane and all other spatially distributed delays in the dendritic network - b : [Hz] 1/tau_i - r [mV] the steepness of the sigmoidal transformation. - v0 parameter of nonlinear sigmoid function - vmax parameter of nonlinear sigmoid function - C_i [list or np.array] average number of synaptic contacts in th inhibitory and excitatory feedback loops - noise_amp - noise_std
