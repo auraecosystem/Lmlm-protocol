@@ -1,8 +1,24 @@
-Based on these specific extensions—.cls, .qst, .ch, .zh, and .sil—you are dealing with source files for SIL International's language software, most likely [SIL Scripture App Builder](https://software.sil.org/scriptureappbuilder/) or [SIL Reading App Builder](https://software.sil.org/readingappbuilder/).
-These tools are widely used by linguists and educators to build localized literacy apps and digital worksheets.
-Here is exactly what each extension stands for in this configuration ecosystem:
-## File Extension Breakdown
+------------------------------
+Based on these specific extensions 
+[]
 
+..cls:
+
+..qst:
+
+..ch:
+
+..zh:
+
+..sil:
+
+* you are dealing with source files for 
+  - SIL International's language software, most likely [SIL Scripture App Builder](https://software.sil.org/scriptureappbuilder/) or [SIL Reading App Builder](https://software.sil.org/readingappbuilder/).
+
+These tools are widely used by linguists and educators to build localized literacy apps and digital worksheets.
+Here is exactly what each extension stands for in this configuration ecosystem:------------------------------
+
+## File Extension Breakdown
 * 
 * worksheet.cls (Class / Configuration): Defines the overall layout, theme, styles, and master structure of the worksheet component.
 * .qst (Questions): The data file that holds the actual quiz or test questions and multiple-choice options used in the app.
