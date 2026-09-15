@@ -8,8 +8,8 @@ prepare_input()[source]
 Prepare input parameters for passing to C++ engine.
 run(par: dict = {}, x0: ndarray | None = None, verbose: bool = False)[source]
 Integrate the MPR model with the given parameters.
-
 Parameters:
+
 pardict
 Dictionary of parameters.
 x0array_like
