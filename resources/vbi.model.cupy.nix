@@ -386,3 +386,4 @@ ValueError
 If the input string does not match any known data type.
 prepare_vec_2d(x, nn, ns, engine, dtype='float')[source]
 if x is scalar pass if x is 1d array, shape should be (ns,) if x is 2d array, shape should be (nn, ns)
+
