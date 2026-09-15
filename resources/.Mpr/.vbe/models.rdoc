@@ -24,8 +24,8 @@ get_default_parameters()[source]
 get_params()[source]
 check_sequence(x: int | float | ndarray, n: int)[source]
 check if x is a scalar or a sequence of length n
-
 Parameters:
+
 x: scalar or sequence of length n
 n: number of nodes
 Returns:
