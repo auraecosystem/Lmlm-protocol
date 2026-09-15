@@ -20,7 +20,6 @@ prepare_input()[source]
 prepare input parameters for passing to C++ engine.
 run(par={}, x0=None, verbose=False)[source]
 Integrate the system of equations for Jansen-Rit sde model.
-
 Parameters:
 par: dict
 parameters to control the Jansen-Rit sde model.
