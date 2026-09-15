@@ -1,4 +1,3 @@
-
 ## Project Summary: Lmlm-protocol
 
 The **Lmlm-protocol** (`auraecosystem/Lmlm-protocol`) is a privacy-first, model-agnostic local AI execution framework developed within the Aura Ecosystem. Its primary objectives include:
