@@ -7,7 +7,6 @@ allocate_memory(xp, nn, ns, n_steps, bold_decimate, dtype)[source]
 do_bold_step(r_in, dtt)[source]
 class MPR_sde(par: dict = {}, Bpar: dict = {})[source]
 Montbrio-Pazo-Roxin model Cupy and Numpy implementation.
-
 Parameters:
 G: float. np.ndarray
 global coupling strength
