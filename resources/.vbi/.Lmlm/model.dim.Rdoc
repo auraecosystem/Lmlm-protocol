@@ -18,6 +18,7 @@ get_default_parameters()[source]
 return default parameters for the Jansen-Rit sde model.
 set_initial_state()[source]
 Set initial state for the system of JR equations with N nodes.
+
 prepare_input()[source]
 prepare input parameters for passing to C++ engine.
 run(par={}, x0=None, verbose=False)[source]
@@ -30,10 +31,9 @@ x0: np.array
 initial state
 verbose: bool
 print the message if True
-
 Returns:
 
-dict
+dict:
 t : time series
 x : state variables
 class JR_sdde(par={})[source]
@@ -60,7 +60,6 @@ Returns:
 x: sequence of length n
 set_initial_state(nn, seed=None)[source]
 set initial state for the system of JR equations with N nodes.
-
 Parameters:
 nn: number of nodes
 seed: random seed
