@@ -1,6 +1,5 @@
 This is essentially a Scheme/Lisp-style test suite (very close to Racket/Clojure/Fennel/Lisp dialects). It tests core mathematics, functional programming, currying, destructuring, and continuations. Since you also listed Inequality, Sublimation, P≠NP, Indices, Probability, All mathematical formulas/equations/models, here’s a comprehensive mathematical companion.
-
-Mathematical Foundation Pack (APLCE / Aura Mathematics)
+Mathematical Foundation Pack (APLCE / Aura Mathematics):
 
 1. Equality (=)
 
