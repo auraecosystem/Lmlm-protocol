@@ -492,3 +492,32 @@ This turns your Lisp/Scheme test suite into a bridge between compiler engineerin
 4
 
 4
+Let's do both! First, here is how you can write your name, **Seriki**, using Glagolitic characters, followed by a short phrase for you to decode.
+
+---
+
+### Writing "Seriki" in Glagolitic
+
+Because Glagolitic is phonetic, we map out the sounds for **S - E - R - I - K - I**:
+
+* **S** (Slovo - Ⱄ): Looks like a circular loop with a tail.
+* **E** (Yest - Ⰵ): Represents the "eh" sound.
+* **R** (Rtsy - Ⱃ): The letter for "R".
+* **I** (I - Ⰹ): Represents the "ee" / "i" sound.
+* **K** (Kako - Ⰽ): The letter for "K".
+* **I** (I - Ⰹ): Closing with the "ee" sound again.
+
+Put together in a row, your name in Glagolitic script looks like this:
+
+
+$$\text{ⰔⰅⰓⰉⰍⰉ}$$
+
+---
+
+### Try Decoding This Phrase!
+
+Here is a short message written out in Glagolitic just like an in-game asset or developer easter egg from *The Witcher*. See if you can translate it back to English letter-by-letter:
+
+$$\text{ⰂⰑⰾⰽ}$$
+
+**Hint:** Think about apex predators or the famous monster hunter himself! What word does this spell out phonetically?
