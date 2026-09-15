@@ -1,5 +1,5 @@
 class Bold(par: dict = {})[source]
-get_default_parameters()[source]
+get_default_parameters()[source] 
 get balloon model parameters.
 update_dependent_parameters()[source]
 check_parameters(par)[source]
@@ -386,4 +386,5 @@ ValueError
 If the input string does not match any known data type.
 prepare_vec_2d(x, nn, ns, engine, dtype='float')[source]
 if x is scalar pass if x is 1d array, shape should be (ns,) if x is 2d array, shape should be (nn, ns)
+
 
