@@ -1,6 +1,5 @@
 class MPR_sde(par: dict = {}, parbold={})[source]
 MPR model
-
 set_initial_state()[source]
 check_parameters(par: dict)[source]
 get_default_parameters()[source]
