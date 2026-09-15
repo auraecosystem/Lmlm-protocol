@@ -1,0 +1,88 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Assuming the library wrapper is imported:
+# from jansen_rit_package import JR_sdde
+
+def run_advanced_multinode_simulation():
+    # 1. Define network size (Number of connected brain regions/nodes)
+    n_nodes = 4  
+    
+    # Initialize the model instance
+    model = JR_sdde()
+    
+    # 2. Fetch default parameter set
+    params = model.get_default_parameters()
+    
+    # 3. Configure temporal and numerical settings
+    params['t_end'] = 8.0          # Total simulation time in seconds
+    params['dt'] = 0.0005          # High-precision integration step (0.5 ms)
+    params['t_transition'] = 1.5   # Transient discard time for numerical stabilization
+    params['method'] = 'rk4'       # High-order Runge-Kutta integration method (if supported)
+    
+    # 4. Define Structural Connectivity (Adjacency Matrix: N x N)
+    # Represents directional or bi-directional synaptic pathways between nodes
+    weights = np.array([
+        [0.0, 0.6, 0.2, 0.0],
+        [0.6, 0.0, 0.0, 0.3],
+        [0.2, 0.0, 0.0, 0.5],
+        [0.0, 0.3, 0.5, 0.0]
+    ])
+    params['weights'] = weights
+    
+    # Define signal transmission delays between nodes (N x N matrix in ms/seconds)
+    params['delays'] = np.zeros((n_nodes, n_nodes))
+    
+    # Global coupling strength across the network
+    params['G'] = 20.0             
+    
+    # 5. Configure External Stimulation Parameters
+    params['sti_amplitude'] = 150.0  # Amplitude of external input pulse
+    params['sti_gain'] = 1.0         # Input gain scaling factor
+    params['sti_ti'] = 3.0           # Onset time of stimulation (seconds)
+    params['sti_duration'] = 0.4     # Duration of stimulation pulse (seconds)
+    
+    # 6. Initialize States for N Nodes
+    # The wrapper's set_initial_state handles 6 state variables per node (6 * N total)
+    if hasattr(model, 'set_initial_state'):
+        initial_state = model.set_initial_state(nn=n_nodes, seed=42)
+    else:
+        initial_state = None
+
+    print(f"Executing multi-node network simulation across {n_nodes} nodes...")
+    
+    # 7. Run the Simulation
+    results = model.run(par=params, x0=initial_state, verbose=True)
+    
+    # 8. Process and Plot Results
+    time = results['t']
+    states = results['x']  # Output shape contains 6 variables per node -> (time_steps, 6 * n_nodes)
+    
+    plt.figure(figsize=(12, 7))
+    
+    # Each node occupies 6 state variables in the state array. 
+    # We compute the local field potential (LFP) proxy: Pyramidal EPSP minus IPSP.
+    for i in range(n_nodes):
+        # Index offset for node i: base variables are at indices 1 and 2 for each block of 6
+        idx_e = i * 6 + 1
+        idx_i = i * 6 + 2
+        node_lfp = states[:, idx_e] - states[:, idx_i]
+        
+        # Offset curves vertically for clean visual comparison
+        plt.plot(time, node_lfp + (i * 250), label=f"Brain Region / Node {i+1}", linewidth=0.9)
+    
+    # Mark stimulation window on the plot
+    plt.axvspan(params['sti_ti'], params['sti_ti'] + params['sti_duration'], 
+                color='red', alpha=0.15, label='External Stimulation Window')
+    
+    plt.title(f"Multi-Node Jansen-Rit Network Dynamics ({n_nodes} Interconnected Regions)")
+    plt.xlabel("Time (seconds)")
+    plt.ylabel("Simulated Activity / LFP (Offset per Node)")
+    plt.legend(loc='upper right')
+    plt.grid(True, linestyle=':', alpha=0.6)
+    plt.tight_layout()
+    plt.show()
+
+if __name__ == "__main__":
+    # run_advanced_multinode_simulation()
+    pass
