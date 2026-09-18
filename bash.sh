@@ -1,2 +1,7 @@
-git clone https://gist.github.com/90e059e542eb0b3e170ed39ca7d19d8b.git
-cd osanyin
+from datasets import load_dataset
+
+# Load a specific category
+ds = load_dataset("markov-ai/computer-use-large", "blender")
+
+# Load all categories
+ds = load_dataset("markov-ai/computer-use-large")
