@@ -8,7 +8,7 @@ The **Lmlm-protocol** is a privacy-first, model-agnostic local AI execution fram
 ## 2. System Architecture & Directory Structure
 The repository follows a modular architecture separating core runtimes, data ingestion connectors, subsystems, and rendering templates:
 
-```text
+```gql
 Lmlm-protocol/
 â”œâ”€â”€ core/
 â”‚   â”œâ”€â”€ __init__.py
