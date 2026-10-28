@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Jar Opener
+# This is for opening files, not launching the notebook from a menu
+NoDisplay=true
+Exec=java -jar %f
+Terminal=true
+MimeType=application/x-java-archive;
