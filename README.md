@@ -1,4 +1,4 @@
-# LMLM Protocol (Local Multi-Language AI Model)
+# LMLM Protocol (Local Multilingual AI Model)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Runtime Lifecycle](https://img.shields.io/badge/Lifecycle-9--Phase-emerald.svg)]()
